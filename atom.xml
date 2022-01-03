@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>少年的博客</title>
+  
+  <subtitle>少年&amp;记录馆</subtitle>
+  <link href="https://iamshaonian.top/atom.xml" rel="self"/>
+  
+  <link href="https://iamshaonian.top/"/>
+  <updated>2022-01-03T10:32:06.004Z</updated>
+  <id>https://iamshaonian.top/</id>
+  
+  <author>
+    <name>少年</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>面向对象三大特征性</title>
+    <link href="https://iamshaonian.top/2022/01/03/mian-xiang-dui-xiang-san-da-te-zheng-xing/"/>
+    <id>https://iamshaonian.top/2022/01/03/mian-xiang-dui-xiang-san-da-te-zheng-xing/</id>
+    <published>2022-01-03T10:24:01.000Z</published>
+    <updated>2022-01-03T10:32:06.004Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;面向对象三大特征性&quot;&gt;&lt;a href=&quot;#面向对象三大特征性&quot; class=&quot;headerlink&quot; title=&quot;面向对象三大特征性&quot;&gt;&lt;/a&gt;面向对象三大特征性&lt;/h1&gt;&lt;h3 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://iamshaonian.top/categories/Java/"/>
+    
+    
+    <category term="Java基础" scheme="https://iamshaonian.top/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抽象类和接口总结</title>
+    <link href="https://iamshaonian.top/2022/01/03/chou-xiang-lei-he-jie-kou/"/>
+    <id>https://iamshaonian.top/2022/01/03/chou-xiang-lei-he-jie-kou/</id>
+    <published>2022-01-03T10:07:00.000Z</published>
+    <updated>2022-01-03T10:31:51.485Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;抽象类和接口&quot;&gt;&lt;a href=&quot;#抽象类和接口&quot; class=&quot;headerlink&quot; title=&quot;抽象类和接口&quot;&gt;&lt;/a&gt;抽象类和接口&lt;/h1&gt;&lt;h4 id=&quot;抽象的特点：&quot;&gt;&lt;a href=&quot;#抽象的特点：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://iamshaonian.top/categories/Java/"/>
+    
+    
+    <category term="Java基础" scheme="https://iamshaonian.top/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>内部类和匿名内部类</title>
+    <link href="https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/"/>
+    <id>https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/</id>
+    <published>2022-01-03T06:34:54.301Z</published>
+    <updated>2022-01-03T06:45:51.981Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;内部类&quot;&gt;&lt;a href=&quot;#内部类&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java关键字总结</title>
+    <link href="https://iamshaonian.top/2022/01/03/guan-jian-zi/"/>
+    <id>https://iamshaonian.top/2022/01/03/guan-jian-zi/</id>
+    <published>2022-01-03T06:34:54.292Z</published>
+    <updated>2022-01-03T06:45:06.175Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;this关键字&quot;&gt;&lt;a href=&quot;#this关键字&quot; class=&quot;headerlink&quot; title=&quot;this关键字&quot;&gt;&lt;/a&gt;this关键字&lt;/h1&gt;&lt;h4 id=&quot;为什么用this？&quot;&gt;&lt;a href=&quot;#为什么用this？&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>构造函数</title>
+    <link href="https://iamshaonian.top/2022/01/03/gou-zao-han-shu/"/>
+    <id>https://iamshaonian.top/2022/01/03/gou-zao-han-shu/</id>
+    <published>2022-01-03T06:34:54.287Z</published>
+    <updated>2022-01-03T06:44:26.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;构造函数&quot;&gt;&lt;a href=&quot;#构造函数&quot; class=&quot;headerlink&quot; title=&quot;构造函数&quot;&gt;&lt;/a&gt;构造函数&lt;/h1&gt;&lt;h4 id=&quot;作用&quot;&gt;&lt;a href=&quot;#作用&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>反射</title>
+    <link href="https://iamshaonian.top/2022/01/03/fan-she/"/>
+    <id>https://iamshaonian.top/2022/01/03/fan-she/</id>
+    <published>2022-01-03T06:34:54.283Z</published>
+    <updated>2022-01-03T06:44:06.934Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;反射：框架设计的灵魂&quot;&gt;&lt;a href=&quot;#反射：框架设计的灵魂&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>单例设计模式</title>
+    <link href="https://iamshaonian.top/2022/01/03/dan-li-she-ji-mo-shi/"/>
+    <id>https://iamshaonian.top/2022/01/03/dan-li-she-ji-mo-shi/</id>
+    <published>2022-01-03T06:34:54.280Z</published>
+    <updated>2022-01-03T06:43:51.785Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;单例设计模式&quot;&gt;&lt;a href=&quot;#单例设计模式&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>代码块</title>
+    <link href="https://iamshaonian.top/2022/01/03/dai-ma-kuai/"/>
+    <id>https://iamshaonian.top/2022/01/03/dai-ma-kuai/</id>
+    <published>2022-01-03T06:34:54.277Z</published>
+    <updated>2022-01-03T06:41:58.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;构造代码块&quot;&gt;&lt;a href=&quot;#构造代码块&quot; class=&quot;headerlink&quot; title=&quot;构造代码块&quot;&gt;&lt;/a&gt;构造代码块&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：给所有的对象初始化&lt;/p&gt;
+&lt;p&gt;例 ：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

@@ -4,8 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 少年的博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="反射, 少年的博客">
+    <meta name="description" content="反射：框架设计的灵魂
+框架：半成品软件。可以在框架的基础上进行软件开发，简化编码
+
+反射：将类的各个组成部分封装为其他对象，这就是反射机制
+
+好处：
+1.可以再程序运行过程中，操作这些对象
+2.可以解耦，提高程序的可扩展性
+
+
+
+获取Cla">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +28,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 少年的博客</title>
+    <title>反射 | 少年的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -30,7 +41,8 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="少年的博客" type="application/atom+xml">
+</head>
 
 
 
@@ -238,7 +250,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #129f55;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -287,12 +299,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">反射</h1>
                 </div>
             </div>
         </div>
@@ -420,17 +432,32 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-03
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2022-01-03
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    964
                 </div>
                 
 
                 
 
                 
-
-                
-
-                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -444,19 +471,155 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new &quot;My New Post&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h4 id="反射：框架设计的灵魂"><a href="#反射：框架设计的灵魂" class="headerlink" title="反射：框架设计的灵魂"></a>反射：框架设计的灵魂</h4><ul>
+<li><p>框架：半成品软件。可以在框架的基础上进行软件开发，简化编码</p>
+</li>
+<li><p>反射：将类的各个组成部分封装为其他对象，这就是反射机制</p>
+<ul>
+<li><p>好处：</p>
+<p>1.可以再程序运行过程中，操作这些对象</p>
+<p>2.可以解耦，提高程序的可扩展性</p>
+<img src="C:\Users\少年\AppData\Roaming\Typora\typora-user-images\image-20210923165816590.png" alt="image-20210923165816590" style="zoom: 67%;" align="left" /></li>
+</ul>
+</li>
+<li><p>获取Class对象的方式</p>
+<p>1.Class.forname(“全类名”)：将字节码文件加载进内存，返回Class对象。（多用于配置文件，将类名定义在配置文件中。读取文件，加载类）</p>
+<p>2.类名.class：通过类名的属性class获取（多用于参数的传递）</p>
+<p>3.对象.getClass():getClass()方法在Object类中定义着（多用于对象的获取字节码对象的方式）</p>
+</li>
+<li><p>结论</p>
+<p>同一个字节码文件，在一次程序运行过程中，只会被加载一次，不论通过哪一种方式获取Class对象都是同一个。（指向通一个堆地址）</p>
+</li>
+<li><p>使用Class对象功能</p>
+<ul>
+<li><p>获取功能</p>
+<p>1.获取成员变量们</p>
+<ul>
+<li>Field[]  getFields()  只能获取public修饰的成员变量</li>
+<li>Field  getField(String name) 只能获取指定的public修饰的成员变量</li>
+<li>Field[]  getDeclareFields()</li>
+<li>Field getDeclareField(String name)</li>
+</ul>
+<p>2.获取构造方法们</p>
+<ul>
+<li><p>Constructor&lt;?&gt;[]  getConstructors()</p>
+</li>
+<li><p>Constructor<T>  getConstruct(类&lt;?&gt;…parameterTypes)</p>
+</li>
+</ul>
+</li>
+<li><p>```java</p>
+<pre><code>getConstructor(int.class,String.class);
+</code></pre>
+<pre class="line-numbers language-none"><code class="language-none">    
+    - Constructor&lt;?&gt;[]  getDeclareConstructors()
+    
+    - Constructor&lt;T&gt;  getDeclareConstruct(类&lt;?&gt;...parameterTypes)
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+    3.获取成员方法们
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+    - Method[]  getMethods()
+    - Method   getMethod(String name,类&lt;?&gt;...parameterTypes)
+    - Method[]  getDeclareMethods()
+    - Method   getDeclareMethod(String name,类&lt;?&gt;...parameterTypes)
+    
+    4.获取类名
+    
+    - String getName(）
+  
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+#### 案例
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+- 需求：写一个”框架“，不能改变该类的任何代码的前提下，可以帮我们创建任意类的对象，并且执行其中任意方法
+
+  - 实现
+
+    1.配置文件
+
+    2.反射
+
+  - 步骤
+
+    1.将需要创建的对象的全类名和需要执行的方法定义在配置文件中
+
+    2.在程序中加载读取配置文件
+
+    3.使用反射技术来加载类文件进内存
+
+    4.创建对象
+
+    5.执行方法
+
+#### 注解
+
+- 概念：书名程序的 
+
+- 注释：用文字描述程序的，给程序员看的。
+
+- 作用分类：
+
+  1.编写文档：通过代码里标识的注解生成doc文档
+
+  2.代码分析：通过代码里标识的注解对代码进行分析【使用反射】
+
+  3.编译检查：通过代码里标识的注解让编译器能够实现基本的 编译检查【@override】
+
+- JDK预定义的一些注解
+
+  - @Override - 检查该方法是否是重写方法。如果发现其父类，或者是引用的接口中并没有该方法  
+
+    时，会报编译错误。
+
+  - @Deprecated - 标记过时方法。如果使用该方法，会报编译警告。
+
+  - @SuppressWarnings - 指示编译器去忽略注解中声明的警告。
+
+- 自定义注解
+
+  - 格式
+
+    元注解
+
+    public @interface 注解名称｛｝
+
+    &#96;&#96;&#96;java
+    @Target&#x2F;&#x2F;元注解
+    public @interfa MyAnno&#123;
+        int age();
+        String name();
+        String[] strs();
+    &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>本质：注解本质就是一个接口，该接口默认继承Annotation接口</p>
+</li>
+<li><p>属性（方法）：接口中可以定义的成员方法（抽象方法）</p>
+<p>1.属性的返回值类型：基本数据类型，字符串（String），枚举，注解</p>
+<p>2.定义了属性，在使用时需要给属性赋值。如果属性名称是value，则value可以省略。</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@MyAnno</span><span class="token punctuation">(</span>age<span class="token operator">=</span><span class="token number">19</span>，strs<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token string">"asd"</span><span class="token punctuation">,</span><span class="token string">"afds"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> woeker<span class="token punctuation">&#123;</span>
+    
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>元注解：描述注解的注解</p>
+<ul>
+<li>@Target:描述注解能够作用的位置<ul>
+<li>ElemType取值<ul>
+<li>TYPE：作用于类上</li>
+<li>METHOD：作用于方法上</li>
+<li>FIELD：作用于成员变量上</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>@Retention:描述注解被保留的阶段<ul>
+<li>@REtention(RetentionPoliyc.RUNTIME)当前被描述的注解，会保留到class字节码文件中，并被JVM读取到</li>
+</ul>
+</li>
+<li>Documented:描述注解是否被抽取到api文档中</li>
+<li>Inherited：描述注解是否被子类继承</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
                 
             </div>
@@ -473,7 +636,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer"></a>
+                    <a href="/about" rel="external nofollow noreferrer">少年</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -483,7 +646,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://iamshaonian.top/2022/01/02/hello-world/">https://iamshaonian.top/2022/01/02/hello-world/</a>
+                    <a href="https://iamshaonian.top/2022/01/03/fan-she/">https://iamshaonian.top/2022/01/03/fan-she/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -496,7 +659,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank"></a>
+                    <a href="/about" target="_blank">少年</a>
                     !
                 </span>
             </div>
@@ -676,6 +839,28 @@
     
 
     
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NTExMC8zMTU3OA==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+    
 
     
 
@@ -692,18 +877,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/02/hello-world/">
+                <a href="/2022/01/03/gou-zao-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="构造函数">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">构造函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -713,18 +897,17 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            
+                            少年
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -732,16 +915,16 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/02/hello-world/">
+                <a href="/2022/01/03/dan-li-she-ji-mo-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="单例设计模式">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">单例设计模式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -752,17 +935,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            
+                            少年
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -801,7 +983,7 @@
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
             + '来源: 少年的博客<br />'
-            + '文章作者: <br />'
+            + '文章作者: 少年<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
@@ -932,71 +1114,16 @@
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
 
     <div class="container row center-align"
-         style="margin-bottom: 0px !important;">
+         style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2022</span>
             
-            <a href="/about" target="_blank"></a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+			<a href="/about" target="_blank">少年</a>
             <br>
             
             
@@ -1019,6 +1146,60 @@
 
             <!-- 运行天数提醒. -->
             
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2022";
+                        var startMonth = "1";
+                        var startDate = "3";
+                        var startHour = "9";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
             <br>
             
         </div>
@@ -1029,7 +1210,7 @@
 
 
 
-    <a href="mailto:130434jzh@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:jzh130434@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1041,6 +1222,12 @@
 
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1514480182" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1514480182" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=jzh15089885085" class="tooltipped" target="_blank" data-tooltip="微信联系我: jzh15089885085" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
     </a>
 
 
@@ -1228,7 +1415,7 @@ $(function () {
     
     
     <script type="text/javascript" color="0,0,0"
-        pointColor="0,0,0" opacity='1'
+        pointColor="0,0,0" opacity='0.7'
         zIndex="-1" count="200"
         src="/libs/background/canvas-nest.js"></script>
     
