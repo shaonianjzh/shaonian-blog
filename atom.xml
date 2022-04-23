@@ -6,7 +6,7 @@
   <link href="https://iamshaonian.top/atom.xml" rel="self"/>
   
   <link href="https://iamshaonian.top/"/>
-  <updated>2022-04-23T09:07:37.947Z</updated>
+  <updated>2022-04-23T09:20:54.739Z</updated>
   <id>https://iamshaonian.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://iamshaonian.top/2022/04/23/mybatis-de-shi-yong-jiao-cheng/"/>
     <id>https://iamshaonian.top/2022/04/23/mybatis-de-shi-yong-jiao-cheng/</id>
     <published>2022-04-23T05:01:00.000Z</published>
-    <updated>2022-04-23T09:07:37.947Z</updated>
+    <updated>2022-04-23T09:20:54.739Z</updated>
     
     
     
@@ -109,18 +109,18 @@
   </entry>
   
   <entry>
-    <title>Java关键字总结</title>
-    <link href="https://iamshaonian.top/2022/01/03/guan-jian-zi/"/>
-    <id>https://iamshaonian.top/2022/01/03/guan-jian-zi/</id>
+    <title>内部类和匿名内部类</title>
+    <link href="https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/"/>
+    <id>https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/</id>
     <published>2022-01-03T11:12:00.000Z</published>
-    <updated>2022-01-03T11:22:39.407Z</updated>
+    <updated>2022-01-03T11:23:16.154Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;this关键字&quot;&gt;&lt;a href=&quot;#this关键字&quot; class=&quot;headerlink&quot; title=&quot;this关键字&quot;&gt;&lt;/a&gt;this关键字&lt;/h1&gt;&lt;h4 id=&quot;为什么用this？&quot;&gt;&lt;a href=&quot;#为什么用this？&quot;</summary>
+    <summary type="html">&lt;h4 id=&quot;内部类&quot;&gt;&lt;a href=&quot;#内部类&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -134,18 +134,18 @@
   </entry>
   
   <entry>
-    <title>内部类和匿名内部类</title>
-    <link href="https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/"/>
-    <id>https://iamshaonian.top/2022/01/03/nei-bu-lei-he-ni-ming-nei-bu-lei/</id>
+    <title>Java关键字总结</title>
+    <link href="https://iamshaonian.top/2022/01/03/guan-jian-zi/"/>
+    <id>https://iamshaonian.top/2022/01/03/guan-jian-zi/</id>
     <published>2022-01-03T11:12:00.000Z</published>
-    <updated>2022-01-03T11:23:16.154Z</updated>
+    <updated>2022-01-03T11:22:39.407Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;内部类&quot;&gt;&lt;a href=&quot;#内部类&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;this关键字&quot;&gt;&lt;a href=&quot;#this关键字&quot; class=&quot;headerlink&quot; title=&quot;this关键字&quot;&gt;&lt;/a&gt;this关键字&lt;/h1&gt;&lt;h4 id=&quot;为什么用this？&quot;&gt;&lt;a href=&quot;#为什么用this？&quot;</summary>
         
       
     
@@ -273,6 +273,31 @@
         
         
     <summary type="html">&lt;h1 id=&quot;面向对象三大特征性&quot;&gt;&lt;a href=&quot;#面向对象三大特征性&quot; class=&quot;headerlink&quot; title=&quot;面向对象三大特征性&quot;&gt;&lt;/a&gt;面向对象三大特征性&lt;/h1&gt;&lt;h3 id=&quot;封装&quot;&gt;&lt;a href=&quot;#封装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://iamshaonian.top/categories/Java/"/>
+    
+    
+    <category term="Java基础" scheme="https://iamshaonian.top/tags/Java%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>抽象类和接口总结</title>
+    <link href="https://iamshaonian.top/2022/01/03/chou-xiang-lei-he-jie-kou/"/>
+    <id>https://iamshaonian.top/2022/01/03/chou-xiang-lei-he-jie-kou/</id>
+    <published>2022-01-03T10:07:00.000Z</published>
+    <updated>2022-04-23T09:21:19.207Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;抽象类和接口&quot;&gt;&lt;a href=&quot;#抽象类和接口&quot; class=&quot;headerlink&quot; title=&quot;抽象类和接口&quot;&gt;&lt;/a&gt;抽象类和接口&lt;/h1&gt;&lt;h4 id=&quot;抽象的特点：&quot;&gt;&lt;a href=&quot;#抽象的特点：&quot; class=&quot;headerlink&quot;</summary>
         
       
     
